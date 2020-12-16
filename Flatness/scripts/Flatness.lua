@@ -29,7 +29,7 @@ print('AppEngine Version: ' .. Engine.getVersion())
 local DELAY = 2000 -- ms between visualization steps for demonstration purpose
 
 -- Create a viewer
-local v = View.create()
+local v = View.create("viewer2D1")
 
 local imageDec=View.ImageDecoration.create()
 imageDec:setRange(0, 10)
