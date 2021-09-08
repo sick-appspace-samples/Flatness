@@ -1,27 +1,4 @@
---[[----------------------------------------------------------------------------
 
-  Application Name:
-  Flatness
-
-  Summary:
-  Example of Image.getFlatness and Image.getFlatRegion
-
-  Description:
-  This sample uses Image.getFlatness and Image.getFlatRegion with a heightmap
-  and generates an image and pixelRegion describing the flatness objects of
-  the original image/heightmap. To be able to observe the several steps of
-  the process the results are presented for two seconds and then the viewer
-  is updated.
-
-  How to Run:
-  Starting this sample is possible either by running the app (F5) or
-  debugging (F7+F10). Results can be seen in the viewer on the DevicePage.
-  Restarting the Sample may be necessary to show results after loading the webpage.
-  To run this Sample a device with SICK Algorithm API and AppEngine >= V2.12.0 is
-  required.
-  
-
-------------------------------------------------------------------------------]]
 --Start of Global Scope---------------------------------------------------------
 
 print('AppEngine Version: ' .. Engine.getVersion())
