@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <manifest>
     <application name="Flatness">
         <crown name="Flatness">
@@ -9,6 +9,6 @@
         <meta key="priority">low</meta>
         <meta key="copy-protected">false</meta>
         <meta key="read-protected">false</meta>
-        <entry path="scripts" default="Flatness.lua"/>
+        <entry default="Flatness.lua" path="scripts"/>
     </application>
 </manifest>
