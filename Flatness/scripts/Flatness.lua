@@ -6,31 +6,27 @@ print('AppEngine Version: ' .. Engine.getVersion())
 local DELAY = 2000 -- ms between visualization steps for demonstration purpose
 
 -- Create a viewer
-local v = View.create("viewer2D1")
+local v = View.create()
 
-local imageDec=View.ImageDecoration.create()
-imageDec:setRange(0, 10)
+local imageDec=View.ImageDecoration.create():setRange(0, 10)
 
-local pixelRegionDec=View.PixelRegionDecoration.create()
-pixelRegionDec:setColor(0, 127, 195, 120)
+local pixelRegionDec=View.PixelRegionDecoration.create():setColor(0, 127, 195, 120)
 
-local pixelRegionDec2=View.PixelRegionDecoration.create()
-pixelRegionDec2:setColor(200, 127, 0, 120)
+local pixelRegionDec2=View.PixelRegionDecoration.create():setColor(200, 127, 0, 120)
 
 --End of Global Scope-----------------------------------------------------------
 
 --Start of Function and Event Scope---------------------------------------------
---@handleOnStarted()
 local function handleOnStarted()
   --Load a heightmap image
   local heightmap = Object.load('resources/heightmap.json')
-  
+
   -- Select what should be considered noise
   local noiseThreshold = 2.0 -- mm
-  
+
   -- Select a kernel size for the algorithm neighborhood
   local kernelSize = 15
-  
+
   -- There is one faster and one more precise algorithm to chose from
   local useFast = true
 
